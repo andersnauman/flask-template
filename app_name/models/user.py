@@ -26,7 +26,7 @@ class User(UserMixin, db.Model):
         return self.password == password
 
     def __repr__(self):
-        return f'<Name "{self.name}", Username "{self.username}", Password: "{self.password}">, Cubicle "{self.cubicles}"'
+        return f'<Name "{self.name}", Username "{self.username}"'
 
 def setup(session):
     users = [
