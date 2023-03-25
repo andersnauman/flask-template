@@ -1,0 +1,17 @@
+[project]
+name = "flask-template"
+version = "1.0.0"
+description = "A template for flask application"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "flask>=2.2.2",
+    "Flask-Login>=0.6.2",
+    "Flask-SQLAlchemy>=3.0.3",
+    "sqlalchemy_utils>=0.40.0",
+    "passlib>=1.7.4",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
