@@ -1,4 +1,4 @@
-## Install / Run / Develope
+## Install / Develope
 ```
 sudo apt-get install python3 python3-venv
 
@@ -17,4 +17,10 @@ flask run
 ## Create Requirements.txt
 python3 -m pip install pip-tools
 pip-compile --resolver=backtracking pyproject.toml
+```
+
+## Run
+```
+python3 -m pip install waitress
+waitress-serve --port=5000 --call 'app:create_app'
 ```
